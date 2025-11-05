@@ -58,6 +58,47 @@ a {
     color: var(--main-bg-color)
 }
 
+/****** Header ***********/
+nav {
+    display: flex;
+    justify-content: space-between
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    gap: 68px;
+    list-style-type: none;
+    margin: 0px 50px 0px 50px;
+    font-size: 16px;
+}
+.logo-booki {
+    height: 19px;
+    margin: 30px 50px 30px 50px;
+}
+.hebergements-button, .activities-button {
+    height: 35px
+    
+}
+
+/****** Research Section ***********/
+h1{
+    font-size: 22px;
+}
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.filters-list {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+.info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
