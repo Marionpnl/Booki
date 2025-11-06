@@ -205,7 +205,13 @@ button {
 .hebergements {
     width: 65%;
 }
-
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.hebergements-cards img {
+    width: 30%;
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
