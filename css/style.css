@@ -62,43 +62,129 @@ a {
 nav {
     display: flex;
     justify-content: space-between
+
 }
-.nav-bar{
+.nav-menu{
     display: flex;
-    align-items: center;
-    gap: 68px;
     list-style-type: none;
-    margin: 0px 50px 0px 50px;
+    margin: 0px 0px 0px 50px;
+    padding-top:19px;
+    gap: 68px;
     font-size: 16px;
+    
 }
 .logo-booki {
     height: 19px;
-    margin: 30px 50px 30px 50px;
+    margin: 30px 50px 30px 0px;
+}    
+
+.nav-menu a:hover {  
+    color: #0065FC;
+    border-top: 2px #0065FC solid;
 }
-.hebergements-button, .activities-button {
-    height: 35px
     
-}
 
 /****** Research Section ***********/
 h1{
     font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0px;
 }
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+}
+.title p {
+    margin-top: 0px;
+    font-size: 16px;
+}
+
+.search-bar {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.search-bar i {
+    color: black;
+    background-color: #F2F2F2;
+    padding: 15px 15px 15px 15px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+input {
+    border: 1px #F2F2F2 solid;
+    padding: 15px 20px 15px 20px;
+    
+}
+
+input::placeholder {
+    color: black;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+button {
+    font-size: 16px;
+    font-weight: 550;
+    text-align: justify;
+    color: white;
+    background-color: #0065FC;
+    border: #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px 18px 15px 18px;
+}
+
 .filters {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap:15px
 }
+
+.filters h3 {
+    font-size: 16px;
+    
+}
+
 .filters-list {
     display: flex;
     list-style-type: none;
     gap: 15px;
+    padding-left: 0px;
+    
 }
-.info {
+
+.filters-list li {
+    border: 2px #F2F2F2 solid;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    height: 19px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+    
+
+.infobar {
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 14px;
+    margin-bottom: 20px;
 }
+
+.infobar i {
+    border: 1px #F2F2F2 solid;
+    border-radius: 50%;
+    padding: 10px 10px 10px 10px;
+    
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
