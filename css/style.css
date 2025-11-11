@@ -214,6 +214,7 @@ button {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    padding-right:0px;
 }
 .hebergements-cards {
     display: flex;
@@ -378,10 +379,12 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+ /****** Hebergements And Populaires ***********/   
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
+/****** Hebergements ***********/
     .hebergements {
         width: 100%;
     }
@@ -403,6 +406,7 @@ footer {
         font-size: 14px;
     }
 
+/****** Populaires ***********/
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -426,18 +430,21 @@ footer {
         font-size: 13px;
     }
 
+/****** Activities ***********/
     .activities-cards .card {
         width: 182px;
+        min-height: 253px;
     }
 
     .activities-cards img{
-        height: 200px
+        height: 180px
     }
 
     .activities-cards .card-title {
         font-size: 16px;
     }
 
+/****** Footer ***********/
     .footer-columns {
         margin-right: 70px;
         white-space: nowrap;
@@ -446,7 +453,7 @@ footer {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
 /****** General ***********/
     .main-container {
         padding: 0px 20px 0px 20px;
@@ -478,16 +485,50 @@ footer {
     }
 
 /****** Research Section ***********/
+    
+    span {
+        display: none;
+    }
+
+    .loupe {
+        display: flex;
+        background-color: #0065FC;
+        color: #FFFFFF;
+    }
+    
+    button{
+        border-radius: 15px;
+    
+    }
     .filters {
         gap: 0px;
     }
 
     .filters-list {
-        gap: 8px;
-        align-content: space-between;
+        gap: 8px;       
     }
     
     .filters-list li {
+        min-width: 105px;
+        
+    }
+
+/****** Hebergements ***********/
+    .hebergements-cards {
+        flex-direction: column;
+    }
+/****** Populaires ***********/
+    .populaires-cards {
+        flex-direction: column;
+    }
+    
+/****** Activities ***********/
+    .activities-cards {
+        flex-direction: column;
+    }
+/****** Footer ***********/
+    footer {
+        flex-direction: column;
         
     }
 }
