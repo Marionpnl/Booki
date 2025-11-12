@@ -62,7 +62,7 @@ ul {
     list-style-type: none;
 }
 
-/****** Header ***********/
+    /****** Header ***********/
 nav {
     display: flex;
     justify-content: space-between
@@ -79,8 +79,9 @@ nav {
 .logo-booki {
     height: 19px;
     margin: 30px 50px 30px 0px;
-}    
+}
 
+/* Change the color of links and border top on hover */
 .nav-menu a:hover {  
     color: #0065FC;
     border-top: 2px #0065FC solid;
@@ -89,7 +90,7 @@ nav {
 }
     
 
-/****** Research Section ***********/
+    /****** Research Section ***********/
 h1{
     font-size: 22px;
     font-weight: 700;
@@ -143,7 +144,7 @@ button {
     padding: 15px 18px 15px 18px;
 }
 
-.loupe {
+button i.fa-solid.fa-magnifying-glass{
     display: none;
 }
 
@@ -179,6 +180,7 @@ button {
     gap:10px;
 }
 
+/* Change the color of filters on hover */
 .filters-list li:hover {
     background-color: #DEEBFF; 
 }
@@ -218,16 +220,22 @@ button {
 }
 .hebergements-cards {
     display: flex;
-    flex-wrap: wrap;
-    gap:28px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 30px 20px;
     margin-top: 33px;
-    margin-bottom: 33px;   
+    margin-bottom: 33px; 
+    
+}
+.hebergements-cards a {
+  display: block;
+  flex: 0 0 calc(33.333% - 20px);/* 3 cards par ligne, en tenant compte du gap */
 }
 
 .hebergements-cards .card {
     display: flex;
     flex-direction: column; 
-    width:235px;      
+    height: 220px;        
 }
 
 .hebergements-cards img {
@@ -490,7 +498,7 @@ footer {
         display: none;
     }
 
-    .loupe {
+    button i.fa-solid.fa-magnifying-glass {
         display: flex;
         background-color: #0065FC;
         color: #FFFFFF;
@@ -518,6 +526,9 @@ footer {
         flex-direction: column;
     }
 /****** Populaires ***********/
+    .populaires {
+        order: -1;
+    }
     .populaires-cards {
         flex-direction: column;
     }
