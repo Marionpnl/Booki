@@ -532,6 +532,15 @@ footer {
 
 /****** Research Section ***********/
     
+    section.research {
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+
+    input {
+        padding-right: 60px;
+    }
+
     span {
         display: none;
     }
@@ -540,51 +549,100 @@ footer {
         display: flex;
         background-color: #0065FC;
         color: #FFFFFF;
+        border-radius: 15px;
+        padding: 15px 15px 15px 15px;
     }
     
     button{
         border-radius: 15px;
-    
+        padding: 0px;
     }
     .filters {
-        gap: 0px;
+        gap: 20px;
     }
 
     .filters-list {
-        gap: 8px;       
+        gap: 10px 8px;
+        justify-content: flex-start;       
     }
     
     .filters-list li {
         min-width: 105px;
-        
+        display: flex;
+        justify-content: flex-start;
+        flex: 0 0 calc(37% - 8px);
+        font-size: 14px;
     }
 
+/****** Hebergements And Populaires ***********/
+    .hebergements-and-populaires section {
+        padding: 20px;
+    }
+/****** Populaires ***********/
+    #populaires {
+        order: -1;
+        margin-top: 0px;
+        border-radius: 0px;
+    }
+
+    .populaires-title {
+        margin-bottom: 15px;
+    }
+
+    .populaires-cards{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .populaires-cards .card {
+        margin-top: 0px;
+    }
 /****** Hebergements ***********/
     .hebergements-cards {
         flex-direction: column;
+        margin-bottom: 15px;
     }
 
     .hebergements-cards a {
         width: 100%;
     }
-    .hebergements {
+    #hebergements {
         background-color: white;
     }
-/****** Populaires ***********/
-    .populaires {
-        order: -1;
-    }
-    .populaires-cards {
-        flex-direction: column;
-    }
+
     
 /****** Activities ***********/
+    .activities {
+        padding: 20px;
+    }
+
+    .activities-cards a {
+        height: 200px;
+    }
+
     .activities-cards {
         flex-direction: column;
     }
+
+    .activities-cards .card-title {
+        
+    }
+
 /****** Footer ***********/
     footer {
         flex-direction: column;
-        
+        padding-top: 30px;
+        padding-bottom: 30px;
+        gap:35px;   
+    }
+    footer h3 {
+        margin-top: 0px;
+    }
+    #Assistance {
+        margin-left: 0px;
     }
 }
