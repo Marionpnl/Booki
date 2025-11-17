@@ -21,6 +21,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -104,6 +105,7 @@ h1{
     gap: 8px;
     margin-top: 20px;
 }
+
 .title p {
     margin-top: 0px;
     font-size: 16px;
@@ -114,8 +116,10 @@ h1{
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
-    
+    border-radius: 15px;
+    overflow: hidden;
 }
+
 .search-bar i {
     display: flex;
     justify-content: center;
@@ -123,14 +127,12 @@ h1{
     color: black;
     background-color: #F2F2F2;
     padding: 15px 18px 15px 18px;
-    border-radius: 15px 0px 0px 15px;
-    
 }
 
 input {
     border: 1px #F2F2F2 solid;
-    padding: 15px 25px 15px 20px;
-    
+    border-right: none;
+    padding: 15px 30px 15px 25px;    
 }
 
 input::placeholder {
@@ -146,8 +148,8 @@ button {
     text-align: justify;
     color: white;
     background-color: #0065FC;
-    border: #0065FC;
-    border-radius: 0px 15px 15px 0px;
+    border: none;
+    border-radius: 0 15px 15px 0;
     padding: 15px 18px 15px 18px;
 }
 
@@ -178,8 +180,8 @@ button i.fa-solid.fa-magnifying-glass{
 
 .filters-list li {
     border: 2px #D9D9D9 solid;
-    border-radius: 20px;
-    padding: 10px 20px 10px 20px;
+    border-radius: 25px;
+    padding: 12px 20px 12px 20px;
     font-size: 17px;
     font-weight: 700;
     display: flex;
@@ -366,9 +368,9 @@ button i.fa-solid.fa-magnifying-glass{
 
 .activities-cards img {
     height: 400px;
+    width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
-    width: 100%;
     margin: 0px;
     padding: 0px;
 }
@@ -521,24 +523,32 @@ footer {
         padding-left: 0px;
         margin-left: 0px;
         padding-top: 0px;
-        gap: 100px;
+        gap: 0px;
+    }
+
+    .nav-menu a {
+        padding-left: 50px;
+        padding-right: 55px;
+        border-bottom: 2px #F2F2F2 solid;
+        padding-bottom: 15px;
     }
 
     .nav-menu a:hover {  
-    border-bottom: 2px #0065FC solid;
-    padding-bottom: 16px;
-    border-top: none;
+        border-bottom: 2px #0065FC solid;
+        padding-bottom: 16px;
+        border-top: none;
     }
 
 /****** Research Section ***********/
     
-    section.research {
-    margin-left: 10px;
-    margin-right: 10px;
+    .research {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 30px;
     }
 
     input {
-        padding-right: 60px;
+        padding-right: 80px;
     }
 
     span {
@@ -556,13 +566,15 @@ footer {
     button{
         border-radius: 15px;
         padding: 0px;
+        margin-left: -12px;
     }
+
     .filters {
         gap: 20px;
     }
 
     .filters-list {
-        gap: 10px 8px;
+        gap: 15px 8px;
         justify-content: flex-start;       
     }
     
@@ -583,10 +595,12 @@ footer {
         order: -1;
         margin-top: 0px;
         border-radius: 0px;
+        padding-bottom: 30px;
     }
 
     .populaires-title {
         margin-bottom: 15px;
+        margin-top: 15px;
     }
 
     .populaires-cards{
@@ -602,9 +616,15 @@ footer {
         margin-top: 0px;
     }
 /****** Hebergements ***********/
+    .hebergements-title {
+        margin-top: 20px;
+    }
+
     .hebergements-cards {
         flex-direction: column;
         margin-bottom: 15px;
+        margin-top: 20px;
+        gap: 15px;
     }
 
     .hebergements-cards a {
@@ -618,6 +638,7 @@ footer {
 /****** Activities ***********/
     .activities {
         padding: 20px;
+        margin-bottom: 40px;
     }
 
     .activities-cards a {
@@ -626,17 +647,24 @@ footer {
 
     .activities-cards {
         flex-direction: column;
+        gap: 15px;
+    }
+
+    .activities-cards .card {
+        min-height: 240px;
     }
 
     .activities-cards .card-title {
-        
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
     }
 
 /****** Footer ***********/
     footer {
         flex-direction: column;
         padding-top: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
         gap:35px;   
     }
     footer h3 {
