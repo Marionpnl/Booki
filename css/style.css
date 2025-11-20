@@ -657,7 +657,6 @@ footer {
 /****** Hebergements And Populaires ***********/
     .hebergements-and-populaires section {
         padding-left: 20px;
-        padding-right: 32px;
     }
 /****** Populaires ***********/
     #populaires {
@@ -666,6 +665,7 @@ footer {
         border-radius: 0px;
         padding-bottom: 30px;
         padding-top: 20px;
+        padding-right: 24px;
     }
 
     .populaires-title {
@@ -686,6 +686,10 @@ footer {
         margin-top: 0px;
     }
 /****** Hebergements ***********/
+    #hebergements {
+        padding-right: 29px;
+    }
+
     .hebergements-title {
         margin-top: 20px;
     }
