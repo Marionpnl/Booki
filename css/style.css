@@ -496,19 +496,20 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 25px;   
+        gap: 20px;   
     }
 
     .populaires-cards a {
-        width: 33%;
+        flex: 0 0 calc(33.333% - 20px);
     }
 
     .populaires-cards .card {
         margin-top: 20px;
+        height: 146px;
     }
 
     .populaires-cards img {
-        height: 115px;
+        height: 146px;
     }
 
     .populaires-cards .card-title {
