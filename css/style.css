@@ -78,7 +78,7 @@ nav {
 .nav-menu{
     display: flex;
     margin: 0px 0px 0px 50px;
-    padding-top:10px;
+    padding-top:18px;
     gap: 68px;
     font-size: 16px;
     font-weight: 400;
@@ -613,6 +613,7 @@ footer {
 
     input {
         padding-right: 80px;
+        min-width: 0;
     }
 
     .search-bar {
@@ -688,6 +689,7 @@ footer {
 /****** Hebergements ***********/
     #hebergements {
         padding-right: 29px;
+        background-color: white;
     }
 
     .hebergements-title {
@@ -706,17 +708,17 @@ footer {
     }
 
     .hebergements-cards .card {
-        min-height: 192px;
+        height: 192px;
+       
     }
 
     .hebergements-cards img {
         height: 105px;
     }
 
-    #hebergements {
-        background-color: white;
+    .hebergements-cards .card-content {
+        gap: 5px;
     }
-
     
 /****** Activities ***********/
     .activities {
@@ -731,7 +733,11 @@ footer {
     }
 
     .activities-cards .card {
-        height: 205px;
+        height: 195px;
+    }
+
+    .activities-cards img {
+        height: 140px;
     }
 
     .activities-cards .card-title {
